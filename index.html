@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="map" class="map-container"></div>
+        <div class="button-container">
+            <button id="addTree">Add Tree</button>
+            <button id="deleteTree">Delete Tree</button>
+            <button id="editTree">Edit Tree</button>
+        </div>
+        <div id="form-container" class="form-container">
+            <form id="treeForm">
+                <label for="treeName">Tree Name:</label>
+                <input type="text" id="treeName" name="treeName" required>
+                <div class="vote-buttons">
+                    <button type="button" id="upvote">Upvote</button>
+                    <button type="button" id="downvote">Downvote</button>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
